@@ -1,4 +1,4 @@
-SET hive.execution.engine=mr;
+#SET hive.execution.engine=mr;
 SET hive.hbase.generatehfiles=true;
 SET hfile.family.path=/tmp/hive_hfile_test/passwd_hbase_hfiles/passwd;
 
