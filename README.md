@@ -59,3 +59,9 @@ export HADOOP_CLASSPATH=`hbase classpath`
 yarn jar /usr/hdp/current/hbase-client/lib/hbase-mapreduce.jar completebulkload /tmp/passwd_hfiles passwd_hbase
 ```
 
+```bash
+export HADOOP_CLASSPATH=`hbase classpath`
+yarn jar /usr/hdp/current/hbase-client/lib/hbase-mapreduce.jar completebulkload $HFILE_HDFS_INPUT_DIR $HBASE_TABLE_NAME
+# pass hbase-site.xml
+yarn jar /usr/hdp/current/hbase-client/lib/hbase-mapreduce.jar completebulkload -Dhbase.config=/etc/hbase/conf/hbase-site.xml $HFILE_HDFS_INPUT_DIR $HBASE_TABLE_NAME
+```
