@@ -54,6 +54,8 @@ Finally, load the HFiles into the HBase table:
 
 ```
 export HADOOP_CLASSPATH=`hbase classpath`
-yarn jar /usr/hdp/current/hbase-client/lib/hbase-server.jar completebulkload /tmp/passwd_hfiles passwd_hbase
+#yarn jar /usr/hdp/current/hbase-client/lib/hbase-server.jar completebulkload /tmp/passwd_hfiles passwd_hbase
+#HDP3.1.4
+yarn jar /usr/hdp/current/hbase-client/lib/hbase-mapreduce.jar completebulkload /tmp/passwd_hfiles passwd_hbase
 ```
 
